@@ -1,0 +1,233 @@
+body{
+font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main{
+    width: 1024px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+  
+}
+
+
+
+.modulo1{
+
+    margin: 10px;
+    width: 70%;  
+    
+}
+
+#txtIngreso{
+    margin: 15px;
+}
+
+
+.moduloin{
+
+    text-align: center;
+}
+
+#lbtxtIngreso{
+    font-weight: bold;
+    
+}
+
+#txtIngreso{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 25px;
+    box-shadow: 1px 5px 15px rgba(124, 127, 186, 0.929);
+}
+
+
+.alerta{
+  display: flex;
+  margin: 5px 35px;
+}
+
+.infoRestriccion{
+display: inline-flex;
+margin: 20px;
+}
+
+
+#btnEncriptar{
+    background-color: #0A3871;
+    color: #E9ECF8;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+#btnEncriptar:hover{
+    background-color: #74bc85;
+    color: #E9ECF8;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+#btnDesencriptar{
+    background-color:  #0A3871;
+    color: #E9ECF8;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    margin: 10px;
+}
+#btnDesencriptar:hover{
+    background-color:   #74bc85;
+    color:  #E9ECF8;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+.modulo2{
+    background-color:white;
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px 10px;
+}
+
+
+.moduloout{
+    
+    width: 90%; 
+    margin:60px auto;
+    text-align: center;
+   
+}
+
+.moduloout img{
+    width: 100%;
+    height: 210px;   
+}
+
+@keyframes flotar {
+    0% {
+      transform: translateY(0); /* Sin desplazamiento vertical */
+    }
+    50% {
+      transform: translateY(-10px); /* Desplazamiento hacia arriba */
+    }
+    100% {
+      transform: translateY(0); /* Vuelve a la posición original */
+    }
+  }
+  
+  #muneco {
+    animation-name: flotar;
+    animation-duration: 5s; /* Duración de la animación: 3 segundos */    
+    animation-iteration-count: infinite; /* Repetir la animación infinitamente */
+    filter: drop-shadow(0 0 35px rgb(105, 107, 240));   
+  }
+  
+
+
+.mensajes{
+    margin: 5px;
+}
+
+.AlertaMensajeNoencontrado{
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+
+.InfoIngresoMensaje{
+    font-size: 12px;   
+   
+}
+
+#txtResultado{
+    width:80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 25px;
+    box-shadow: 1px 5px 15px rgba(124, 127, 186, 0.929); 
+    
+}
+
+#btncopiar{
+  
+  margin-top: 35px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #0A3871;
+  color: white;
+  border: none;
+}
+
+#btncopiar:hover{
+  
+    margin-top: 35px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    background-color:#74bc85;
+    color: white;
+    border: none;
+    
+  }
+  
+  #btnreiniciar{
+  
+    margin-top: 35px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #0A3871;
+    color: white;
+    border: none;
+  }
+  
+  #btnreiniciar:hover{
+    
+      margin-top: 35px;
+      padding: 10px;
+      width: 90%;
+      border-radius: 15px;
+      background-color:#74bc85;
+      color: white;
+      border: none;
+      
+    }
+    
+    @media screen and (max-width: 768px) {
+        main#principal {
+            width: 100%; /* El main ocupa todo el ancho disponible */
+            display: block; /* Cambiamos a display block para que los módulos apilen verticalmente */
+        }
+        .modulo1, .modulo2 {
+            width: 100%; /* Los módulos ocupan todo el ancho en pantallas pequeñas */
+            margin: 0; /* Eliminamos los márgenes para aprovechar mejor el espacio */
+        }
+        #txtIngreso, #txtResultado {
+            width: calc(100% - 30px); /* Ancho del textarea al 100% menos los 30px de los márgenes */
+        }
+        .btn {
+            width: calc(100% - 20px); /* Ancho de los botones al 100% menos los 20px de los márgenes */
+        }
+    }
+ 
+    
